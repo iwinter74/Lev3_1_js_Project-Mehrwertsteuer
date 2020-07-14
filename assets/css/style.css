@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0
+}
+#hero, #ergebnis {
+    width: 50%;
+    border: 1px solid black;
+    margin: 1em auto
+}
+article {
+    background: lightgray;
+    padding: 2em;
+    margin: 0.5em
+}
+div {
+    background: lightgray;
+}
+input {
+    padding: 0.5em 1em
+}
+#ergebnis>h1 {
+    color: blue;
+}
+input[type=button] {
+    background: blue;
+    color: white;
+    width: 30%;
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+#align {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5em
+}
+h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em
+}
+#ergebnis>h1, #hero>h1 {
+    margin-left: 0.5em
+}
+label {
+    display: inline-block;
+    padding-top: 0.5em
+}
