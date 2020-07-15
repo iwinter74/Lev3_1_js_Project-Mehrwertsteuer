@@ -1,4 +1,8 @@
-let nettoToBrutto=true
+let nettoToBrutto = true
+document.getElementById("type").innerHTML = `<h1>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</h1>
+    <input type="text" name="" id="input"></input>`
+document.getElementById("final").innerHTML = `<h1>Bruttobetrag (Endpreis):</h1>`
+
 function toBrutto() {
     console.log("test to brutto")
     document.getElementById("type").innerHTML = `<h1>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</h1>
@@ -10,6 +14,7 @@ function toBrutto() {
 } 
 function toNetto() {
     console.log("test")
+    document.getElementById("final").innerHTML = `<h1>Nettobetrag:</h1>`
     document.getElementById("type").innerHTML = `<h1>Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro</h1>
         <input type="text" name="" id="input">`
     nettoToBrutto = false
@@ -42,7 +47,7 @@ function mwSt() {
         console.log(steuer)
         steuer = steuer.toFixed(2)
         document.getElementById("steuer").innerHTML = steuer + "€ "
-        document.getElementById("final").innerHTML = `<h1>Bruttobetrag (Endpreis)</h1> ${brutto} €`
+        document.getElementById("final").innerHTML = `<h1>Bruttobetrag (Endpreis):</h1> ${brutto} €`
     } else if (nettoToBrutto == false) {
         console.log("Je suis dans le block netto to brutto")
         console.log(percent)
@@ -56,7 +61,7 @@ function mwSt() {
         console.log(steuer)
         steuer = steuer.toFixed(2)
         document.getElementById("steuer").innerHTML = steuer + " €"
-        document.getElementById("final").innerHTML = `<h1>Nettobetrag</h1> ${netto} €`
+        document.getElementById("final").innerHTML = `<h1>Nettobetrag:</h1> ${netto} €`
     }
 }
 function myReset() {
